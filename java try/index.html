@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My own website </title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+
+
+  <nav id="navbar">
+    <div class="logo">
+       <p>MY OWN WEBSITE</p>
+    </div>
+    <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="propos.html">Contact</a></li>
+    </ul>
+</nav>
+<script>
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener('click', ()=>{
+//Animate Links
+navLinks.classList.toggle("open");
+links.forEach(link => {
+    link.classList.toggle("fade");
+});
+
+//Hamburger Animation
+hamburger.classList.toggle("toggle");
+});
+</script>
+
+<div class="regroup">
+  <div class="container-first ">
+    <h1>MY OWN WEBSITE</h1>
+    <a href="mailto:alexandrevite@gmail.com"><p>Contactez-moi</p></a>
+  </div>
+<div class="container-img">
+  <img src="/image/img2.webp" alt="">
+</div>
+<div class="absolu">
+<img src="/image/img2.webp" alt="" class="same">
+</div>
+<div class="absolu">
+  <img src="/image/img2.webp" alt="" class="same">
+  </div>
+  <div class="absolu">
+    <img src="/image/img2.webp" alt="" class="same">
+    </div>
+</div>
+
+<div class="information">
+<h2>Un website selon vos envies</h2>
+<p>Choisissez vos produits ou services, <br> vos couleurs et styles d'&eacutecriture. </p>
+<div class="link">
+  <a href="https://www.cdnfonts.com/" target="_blank">Panel de couleur</a>
+  <a href="https://color.adobe.com/fr/create/color-wheel" target="_blank" download>Style d'écriture</a>
+</div>
+</div>
+
+
+<div class="information-dos">
+  <h3>Un suivie constant</h3>
+  <p>Travailler &agrave vos cot&eacutes afin de construire<br> le site internet de votre choix. Des &eacutechanges et un suivie r&eacutegulier. <br>My Own website met tout en oeuvre pour produire le meilleur site pour votre PME. </p>
+</div>
+
+
+
+
+
+<Div class="pourquoi-nous">
+  <p class="pk" >Pourquoi-Nous</p>
+  </Div>
+
+
+  
+  <div class="expliquation">
+  <p>My Own website se charge de tous. De la cr&eacuteation de votre site au lancement sur le web. Plusieurs templates seront &agrave votre disposition pour vous guider dans votre r&eacuteflexion. Notre mission est de constituer un site internet facile d'usage, clair et pr&eacutecis accompagner d'un design moderne.
+    Chez My Own website, notre engagement est primordial. On est &agrave votre &eacutecoute tous en vous proposant diverses possibilit&eacutes d'am&eacutelioration. Nous ajoutons notre expertise &agrave vos &eacutexigences.
+    Notre politique exige un client &agrave la fois. Nous voulons accorder 100% de nos efforts dans le projet. Nous sommes &agrave votre entière &eacutecoute afin d'avancer ensemble. 
+  Notre suivie est important pour le bon déroulement de votre site, bien qu'après être lancer sur le web. My Own website vous offre une garantie d'un an. Tout changement demandé par le client durant cette période sera pris en charge.  
+  </p>
+</div>
+
+
+
+<div class="language">
+  <div class="dos">
+    <p>HTML</p>
+  </div>
+  <div class="dos">
+    <p>CSS</p>
+  </div>
+</div>
+
+
+
+
+<div class="avantage">
+  <div class="uno">
+    <p>Qualit&eacute</p>
+  </div>
+  <div class="uno">
+    <p>Engagement</p>
+  </div>
+  <div class="uno">
+    <p>Garantie</p>
+</div>
+</div>
+
+<div class="container-contact col-12 col-s-12">
+  <div class="container-social">
+    <a href="#" class="fa fa-facebook"></a> 
+    <a href="#" class="fa fa-twitter"></a> 
+    <a href="#" class="fa fa-instagram"></a> 
+  </div>
+  <div class="container-lien">
+    <p>Alexandre Vit&eacute - +33 6 42 48 21 70</p>
+    <p>Alexandrevite@gmail.com</p>
+  </div>
+</div>
+
+ 
+
+    </body>
+</html>

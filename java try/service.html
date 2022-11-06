@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My own website </title> 
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="logo">
+           <p>MY OWN WEBSITE</p>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="propos.html">Contact</a></li>
+        </ul>
+    </nav>
+    <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    const links = document.querySelectorAll(".nav-links li");
+    
+    hamburger.addEventListener('click', ()=>{
+    //Animate Links
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle("fade");
+    });
+    
+    //Hamburger Animation
+    hamburger.classList.toggle("toggle");
+    });
+    </script>
+    
+
+
+<div class="container-first">
+    <h1>Notre service en 3 &eacutetapes</h1>
+</div>
+
+
+
+
+
+<div class="container-third">
+    <div class="text">
+        <p>Brainstorm</p>
+        <p>La première &eacutetape regroupe les id&eacutees n&eacutecessaires &agrave la cr&eacuteation du site web. Nous souhaitons mettre en avant les id&eacutees du client tout en proposant notre expertise. Brainstorming consiste &agrave partager les id&eacutees de chacun afin de cr&eacuteer un site internet optimal pour votre entreprise. Vous avez le choix concernant la structure et le contenue du site.  </p>
+    </div>
+    <div class="text">
+        <p>Cr&eacuteation</p>
+        <p>Lors de la création de votre site web, nous sommes &agrave l'&eacutecoute concernant tout changement demand&eacute par le client. Nous r&eacutealisons le site internet selon vos envies et contenue. Un retour r&eacutegulier est fait pour maintenir le client au courant du procesus. Nous nous chargeons aussi du lancement du site sur le web.</p>
+    </div>
+    <div class="text">
+        <p>Suivie</p>
+        <p>A la suite du lancement de votre site. Nous vous garantissons un suivie d'un an. Vous permettant de changer le contenue de votre site. Tous problèmes survenue seront g&eacuterés par notre équipe. Nous souhaitons promouvoir aussi votre website sur nos réseaux afin d'accroitre votre visibilit&eacute.</p>
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

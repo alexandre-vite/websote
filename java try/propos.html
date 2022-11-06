@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My own website </title> 
+    <link rel="stylesheet" href="propos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">
+           <p>MY OWN WEBSITE</p>
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="propos.html">Contact</a></li>
+        </ul>
+    </nav>
+    <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    const links = document.querySelectorAll(".nav-links li");
+    
+    hamburger.addEventListener('click', ()=>{
+    //Animate Links
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle("fade");
+    });
+    
+    //Hamburger Animation
+    hamburger.classList.toggle("toggle");
+    });
+    </script>
+    
+
+
+    <div class="container-chef col-12 col-s-12">
+        <div>
+        <h5>A propos</h5>
+        <p> Etudiant &agrave Institut Mines Télécom Business School et agée de 20 ans, j'ai pris gout &agrave l'informatique durant mes deux première années de mon Bachelors. Etant nouveau dans ce domaine, c'est avec determination et sérieux que j'ai pu me former au language informatique HTML et CSS. Je propose mes services au PME afin d'augmenter leur visibilié auprès de leur clients. Utilisant HTML5 et CSS j'offre la posibilité aux PME de créer un site internet informatif pour leur clients.  </p>
+   </div>
+    </div>
+        
+
+<div class="contact">
+    <p>Contact</p>
+</div>
+  <div class="container-main">
+        <div class="container-social">
+          <a href="#" class="fa fa-facebook"></a> 
+          <a href="#" class="fa fa-twitter"></a> 
+          <a href="#" class="fa fa-instagram"></a> 
+        </div>
+        <div class="container-lien">
+          <p>+33 6 42 48 21 70</p>
+          <p>Alexandrevite@gmail.com</p>
+        </div>
+      </div>
+      
+        
+
+</body>
+</html>
